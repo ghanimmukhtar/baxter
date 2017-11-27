@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /MotionPlanning1
         - /MotionPlanning1/Scene Geometry1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
@@ -11,12 +12,10 @@ Panels:
         - /MotionPlanning1/Planned Path1
         - /TF1
         - /TF1/Frames1
-        - /TF1/Frames1/left_gripper1
-        - /TF1/Frames1/left_gripper1/Position1
         - /PointCloud22
         - /PointCloud23
       Splitter Ratio: 0.74256
-    Tree Height: 444
+    Tree Height: 265
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -1034,8 +1033,6 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        approach_frame:
-          Value: true
         base:
           Value: false
         camera_depth_frame:
@@ -1056,8 +1053,6 @@ Visualization Manager:
           Value: false
         dummyhead1:
           Value: false
-        goal_frame:
-          Value: true
         head:
           Value: false
         head_camera:
@@ -1172,13 +1167,9 @@ Visualization Manager:
       Tree:
         world:
           base:
-            approach_frame:
-              {}
             collision_head_link_1:
               {}
             collision_head_link_2:
-              {}
-            goal_frame:
               {}
             torso:
               camera_link:
@@ -1375,38 +1366,38 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 4.75735
+      Distance: 2.85296
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.554437
-        Y: 0.143326
-        Z: 2.87737e-05
+        X: 2.14782
+        Y: -0.255842
+        Z: 2.85353e-05
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.450203
+      Pitch: 0.530203
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 6.03993
+      Yaw: 6.16993
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
-  Height: 1056
+    collapsed: true
+  Height: 1028
   Help:
     collapsed: false
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
   MotionPlanning:
-    collapsed: false
+    collapsed: true
   MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc0200000007fb000000100044006900730070006c0061007900730100000028000001fd000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000022b000001d7000001cc00ffffff00000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003befc0200000007fb000000100044006900730070006c00610079007300000000280000014a000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001780000026e000001cc00ffffff0000039f000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1855
-  X: 65
-  Y: 24
+  Width: 927
+  X: 992
+  Y: 52
