@@ -10,7 +10,6 @@ Panels:
         - /MotionPlanning1/Planning Request1
         - /MotionPlanning1/Planning Metrics1
         - /MotionPlanning1/Planned Path1
-        - /TF1
         - /TF1/Frames1
         - /PointCloud22
         - /PointCloud23
@@ -73,27 +72,6 @@ Visualization Manager:
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
           base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_rgb_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_rgb_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -418,27 +396,6 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          camera_depth_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_depth_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_rgb_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-          camera_rgb_optical_frame:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
           collision_head_link_1:
             Alpha: 1
             Show Axes: false
@@ -729,27 +686,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        camera_depth_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_depth_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        camera_rgb_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        camera_rgb_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         collision_head_link_1:
           Alpha: 1
           Show Axes: false
@@ -1029,7 +965,7 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Frame Timeout: 15
       Frames:
         All Enabled: false
@@ -1260,7 +1196,7 @@ Visualization Manager:
               sonar_ring:
                 {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
