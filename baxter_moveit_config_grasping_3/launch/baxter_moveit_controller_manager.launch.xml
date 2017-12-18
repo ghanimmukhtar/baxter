@@ -16,6 +16,6 @@
   <param name="use_controller_manager" value="$(arg use_controller_manager)" />
   
   <!-- load controller_list and controller_manager_ns -->
-  <rosparam file="$(find baxter_moveit_config_grasping)/config/baxter_controllers.yaml"/>
+  <rosparam file="$(find baxter_moveit_config_grasping_3)/config/baxter_controllers.yaml"/>
 
 </launch>

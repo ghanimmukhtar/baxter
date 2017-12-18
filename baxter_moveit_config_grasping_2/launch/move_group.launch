@@ -1,10 +1,12 @@
 <launch>
 
+  <include file="$(find baxter_moveit_config_grasping_2)/launch/planning_context.launch" />
+
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />
   <arg unless="$(arg debug)" name="launch_prefix" value="" />
   <arg     if="$(arg debug)" name="launch_prefix"
-	   value="gdb -x $(find baxter_moveit_config_grasping)/launch/gdb_settings.gdb --ex run --args" />
+	   value="gdb -x $(find baxter_moveit_config_grasping_2)/launch/gdb_settings.gdb --ex run --args" />
 
   <!-- Verbose Mode Option -->
   <arg name="info" default="$(arg debug)" />
@@ -19,12 +21,12 @@
   <arg name="publish_monitored_planning_scene" default="true"/>
 
   <!-- Planning Functionality -->
-  <include ns="move_group" file="$(find baxter_moveit_config_grasping)/launch/planning_pipeline.launch.xml">
+  <include ns="move_group" file="$(find baxter_moveit_config_grasping_2)/launch/planning_pipeline.launch.xml">
     <arg name="pipeline" value="ompl" />
   </include>
 
   <!-- Trajectory Execution Functionality -->
-  <include ns="move_group" file="$(find baxter_moveit_config_grasping)/launch/trajectory_execution.launch.xml" if="$(arg allow_trajectory_execution)">
+  <include ns="move_group" file="$(find baxter_moveit_config_grasping_2)/launch/trajectory_execution.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_manage_controllers" value="true" />
     <arg name="moveit_controller_manager" value="baxter" unless="$(arg fake_execution)"/>
     <arg name="moveit_controller_manager" value="fake" if="$(arg fake_execution)"/>
@@ -36,7 +38,7 @@
   <arg name="simulation" default="false" />
   <arg name="xtion" default="false" />
   <arg name="camera_link_pose" default="0.15 0.075 0.5 0.0 0.7854 0.0"/>
-  <include ns="move_group" file="$(find baxter_moveit_config_grasping)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
+  <include ns="move_group" file="$(find baxter_moveit_config_grasping_2)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="kinect" value="$(arg kinect)" />
     <arg name="kinect2" value="$(arg kinect2)" />
     <arg name="simulation" value="$(arg simulation)" />
@@ -54,7 +56,7 @@
     <param name="max_safe_path_cost" value="$(arg max_safe_path_cost)"/>
     <param name="jiggle_fraction" value="$(arg jiggle_fraction)" />
 
-     <!-- MoveGroup capabilities to load -->
+    <!-- MoveGroup capabilities to load -->
     <param name="capabilities" value="move_group/MoveGroupCartesianPathService
               move_group/MoveGroupExecuteService
               move_group/MoveGroupKinematicsService

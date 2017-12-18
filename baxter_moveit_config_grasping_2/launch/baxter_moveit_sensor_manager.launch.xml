@@ -6,7 +6,7 @@
          <group ns="move_group" >
              <param name="octomap_frame" type="string" value="kinect2_link" />
              <param name="octomap_resolution" type="double" value="0.02" />
-             <rosparam command="load" file="$(find baxter_moveit_config_grasping)/config/kinect2_sensor.yaml" />
+             <rosparam command="load" file="$(find baxter_moveit_config_grasping_2)/config/kinect2_sensor.yaml" />
          </group>
      </group>
 
@@ -15,7 +15,7 @@
          <group ns="move_group" >
              <param name="octomap_frame" type="string" value="camera_link" />
              <param name="octomap_resolution" type="double" value="0.02" />
-             <rosparam command="load" file="$(find baxter_moveit_config_grasping)/config/kinect_sensor.yaml" />
+             <rosparam command="load" file="$(find baxter_moveit_config_grasping_2)/config/kinect_sensor.yaml" />
          </group>
      </group>
      
@@ -26,7 +26,7 @@
          <group ns="move_group" >
              <param name="octomap_frame" type="string" value="camera_link" />
              <param name="octomap_resolution" type="double" value="0.02" />
-             <rosparam command="load" file="$(find baxter_moveit_config_grasping)/config/kinect_sensor.yaml" />
+             <rosparam command="load" file="$(find baxter_moveit_config_grasping_2)/config/kinect_sensor.yaml" />
          </group>
      </group>
      <group if="$(arg kinect)" >
@@ -42,7 +42,7 @@
          <group ns="move_group" >
              <param name="octomap_frame" type="string" value="camera_link" />
              <param name="octomap_resolution" type="double" value="0.02" />
-             <rosparam command="load" file="$(find baxter_moveit_config_grasping)/config/kinect_sensor.yaml" />
+             <rosparam command="load" file="$(find baxter_moveit_config_grasping_2)/config/kinect_sensor.yaml" />
          </group>
      </group>
      <arg name="xtion" default="false"/>
@@ -62,7 +62,8 @@
          <group ns="move_group" >
              <param name="octomap_frame" type="string" value="camera_link" />
              <param name="octomap_resolution" type="double" value="0.02" />
-             <rosparam command="load" file="$(find baxter_moveit_config_grasping)/config/xtion_sensor.yaml" />
+             <rosparam command="load" file="$(find baxter_moveit_config_grasping_2)/config/xtion_sensor.yaml" />
          </group>
      </group>
 </launch>
+
