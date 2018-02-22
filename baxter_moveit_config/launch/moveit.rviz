@@ -4,17 +4,17 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /MotionPlanning1
         - /MotionPlanning1/Scene Geometry1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
         - /MotionPlanning1/Planning Metrics1
         - /MotionPlanning1/Planned Path1
+        - /TF1
         - /TF1/Frames1
         - /PointCloud22
         - /PointCloud23
       Splitter Ratio: 0.74256
-    Tree Height: 265
+    Tree Height: 921
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -44,7 +44,7 @@ Visualization Manager:
       Reference Frame: <Fixed Frame>
       Value: true
     - Class: moveit_rviz_plugin/MotionPlanning
-      Enabled: true
+      Enabled: false
       Move Group Namespace: ""
       MoveIt_Goal_Tolerance: 0
       MoveIt_Planning_Attempts: 10
@@ -72,6 +72,27 @@ Visualization Manager:
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
           base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_depth_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_depth_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_rgb_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_rgb_optical_frame:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -396,6 +417,27 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+          camera_depth_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_depth_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_rgb_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_rgb_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           collision_head_link_1:
             Alpha: 1
             Show Axes: false
@@ -671,7 +713,7 @@ Visualization Manager:
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
-      Value: true
+      Value: false
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
@@ -683,6 +725,27 @@ Visualization Manager:
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_rgb_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_rgb_optical_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -965,10 +1028,30 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: false
+      Enabled: true
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        approach_frame0:
+          Value: true
+        approach_frame1:
+          Value: false
+        approach_frame2:
+          Value: false
+        approach_frame3:
+          Value: false
+        approach_frame4:
+          Value: false
+        approach_frame5:
+          Value: false
+        approach_frame6:
+          Value: false
+        approach_frame7:
+          Value: false
+        approach_frame8:
+          Value: false
+        approach_frame9:
+          Value: false
         base:
           Value: false
         camera_depth_frame:
@@ -980,7 +1063,7 @@ Visualization Manager:
         camera_rgb_frame:
           Value: false
         camera_rgb_optical_frame:
-          Value: false
+          Value: true
         collision_head_link_1:
           Value: false
         collision_head_link_2:
@@ -989,9 +1072,33 @@ Visualization Manager:
           Value: false
         dummyhead1:
           Value: false
+        final_goal_frame0:
+          Value: false
+        final_goal_frame1:
+          Value: false
+        final_goal_frame2:
+          Value: false
+        final_goal_frame3:
+          Value: false
+        final_goal_frame4:
+          Value: false
+        final_goal_frame5:
+          Value: false
+        final_goal_frame6:
+          Value: false
+        final_goal_frame7:
+          Value: false
+        final_goal_frame8:
+          Value: false
+        final_goal_frame9:
+          Value: false
+        goal_frame:
+          Value: true
         head:
           Value: false
         head_camera:
+          Value: false
+        kinect2_link:
           Value: false
         l_gripper_l_finger:
           Value: false
@@ -1099,13 +1206,46 @@ Visualization Manager:
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
         world:
           base:
             collision_head_link_1:
               {}
             collision_head_link_2:
+              {}
+            goal_frame:
+              approach_frame0:
+                final_goal_frame0:
+                  {}
+              approach_frame1:
+                final_goal_frame1:
+                  {}
+              approach_frame2:
+                final_goal_frame2:
+                  {}
+              approach_frame3:
+                final_goal_frame3:
+                  {}
+              approach_frame4:
+                final_goal_frame4:
+                  {}
+              approach_frame5:
+                final_goal_frame5:
+                  {}
+              approach_frame6:
+                final_goal_frame6:
+                  {}
+              approach_frame7:
+                final_goal_frame7:
+                  {}
+              approach_frame8:
+                final_goal_frame8:
+                  {}
+              approach_frame9:
+                final_goal_frame9:
+                  {}
+            kinect2_link:
               {}
             torso:
               camera_link:
@@ -1196,7 +1336,7 @@ Visualization Manager:
               sonar_ring:
                 {}
       Update Interval: 0
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -1309,31 +1449,31 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.14782
-        Y: -0.255842
-        Z: 2.85353e-05
+        X: 2.1599
+        Y: -0.380914
+        Z: 2.81243e-05
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.530203
+      Pitch: 0.325203
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 6.16993
+      Yaw: 5.72493
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: true
-  Height: 1028
+    collapsed: false
+  Height: 1056
   Help:
     collapsed: false
-  Hide Left Dock: true
+  Hide Left Dock: false
   Hide Right Dock: false
   MotionPlanning:
-    collapsed: true
+    collapsed: false
   MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003befc0200000007fb000000100044006900730070006c00610079007300000000280000014a000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001780000026e000001cc00ffffff0000039f000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a2000003dafc0200000007fb000000100044006900730070006c0061007900730100000028000003da000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000002830000017f0000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001780000028a000000160000001600000497000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 927
-  X: 992
-  Y: 52
+  Width: 1855
+  X: 65
+  Y: 24

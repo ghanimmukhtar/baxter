@@ -11,7 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   cmake_modules
 )
 
-find_package(Eigen3 REQUIRED)
+find_package(PkgConfig)
+pkg_search_module(Eigen3 REQUIRED eigen3)
 
 catkin_package(
   LIBRARIES
